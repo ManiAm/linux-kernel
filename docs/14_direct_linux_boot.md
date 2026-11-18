@@ -137,7 +137,7 @@ The previous section booted into a temporary RAM environment. For persistent sto
 
 ### Step 1 — Prepare the root filesystem
 
-Create a minimal root filesystem in `rootfs.qcow2` as described in [Minimal Root Filesystem](minimal_root_fs.md).
+Create a minimal root filesystem in `rootfs.qcow2` as described in [Minimal Root Filesystem](15_minimal_root_fs.md).
 
 ### Step 2 — Obtain an initrd
 
@@ -210,7 +210,7 @@ After the VM restarts, `/test.txt` will still be present.
 
 Direct boot also works for cross-architecture emulation. This example boots an Alpine Linux ARM64 system using pre-built kernel and initrd files — no firmware setup is required because the kernel is loaded directly by QEMU.
 
-Download `vmlinuz-lts` and `initramfs-lts` from the [Alpine ARM64 netboot directory](https://dl-cdn.alpinelinux.org/alpine/edge/releases/aarch64/netboot/). For the disk image, prepare a QCOW2 image with an Alpine ARM64 root filesystem (see [Minimal Root Filesystem](minimal_root_fs.md) for the general approach):
+Download `vmlinuz-lts` and `initramfs-lts` from the [Alpine ARM64 netboot directory](https://dl-cdn.alpinelinux.org/alpine/edge/releases/aarch64/netboot/). For the disk image, prepare a QCOW2 image with an Alpine ARM64 root filesystem (see [Minimal Root Filesystem](15_minimal_root_fs.md) for the general approach):
 
 ```
 $ qemu-system-aarch64 \
@@ -230,4 +230,4 @@ Note that ARM uses `ttyAMA0` (the PL011 UART) as the serial console instead of x
 
 ---
 
-[← Previous: Kernel Boot Process](13_kernel_boot.md)
+[← Previous: Kernel Boot Process](13_kernel_boot.md) | [Next: Minimal Root Filesystem →](15_minimal_root_fs.md)

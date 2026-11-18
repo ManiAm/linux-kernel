@@ -39,10 +39,10 @@ A reference covering the Linux kernel — its UNIX origins, system architecture 
 | #  | Topic                                                  | Description |
 |----|--------------------------------------------------------|-------------|
 | 13 | [Kernel Boot Process](docs/13_kernel_boot.md)          | Internal kernel boot sequence |
+
+## Direct Linux Boot
+
+| #  | Topic                                                  | Description |
+|----|--------------------------------------------------------|-------------|
 | 14 | [QEMU Direct Linux Boot](docs/14_direct_linux_boot.md) | Loading the kernel bypassing firmware and bootloader |
-
-## Appendix
-
-| Topic                                                      | Description |
-|------------------------------------------------------------|-------------|
-| [Minimal Root Filesystem](docs/minimal_root_fs.md)         | Mounting a QCOW2 image and populating it with a minimal root filesystem |
+| 15 | [Minimal Root Filesystem](docs/15_minimal_root_fs.md)  | Mounting a QCOW2 image and populating it with a minimal root filesystem |

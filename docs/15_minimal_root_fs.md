@@ -98,3 +98,7 @@ sudo qemu-nbd --disconnect /dev/nbd0
 ```
 
 The `rootfs.qcow2` image now contains a bootable root filesystem and can be used with QEMU's system emulation.
+
+---
+
+[← Previous: QEMU Direct Linux Boot](14_direct_linux_boot.md)
